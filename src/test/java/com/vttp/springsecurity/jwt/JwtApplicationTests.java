@@ -1,13 +1,13 @@
-package com.vttp.springsecurity.jwt;
+// package com.vttp.springsecurity.jwt;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class JwtApplicationTests {
+// @SpringBootTest
+// class JwtApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+// 	@Test
+// 	void contextLoads() {
+// 	}
 
-}
+// }

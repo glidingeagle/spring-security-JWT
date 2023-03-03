@@ -41,4 +41,11 @@ public class CardholderService {
         cardholder.setPassword(password);
         cardholderRepositories.insertNewUser(cardholder);
     }
+
+    public void removeCardholder (String username) throws Exception {
+        
+        if (!cardholderRepositories.deleteByUsername(username)) {
+            throw new Exception("There is no such username present in our record");
+        }
+    }
 }

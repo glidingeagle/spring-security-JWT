@@ -8,4 +8,6 @@ public interface Queries {
     public static final String SQL_INSERT_NEW_CARDHOLDER = "insert into cardholders (user_id, username, first_name, last_name, email, password) values (?, ?, ?, ?, ?, ?)";
     
     public static final String SQL_GET_CARDHOLDER_INFO_BY_EMAIL = "select * from cardholders where email = ?";
+
+    public static final String SQL_DELETE_CARDHOLDER_INFO_BY_USERNAME = "delete from cardholders where username = ?";
 }

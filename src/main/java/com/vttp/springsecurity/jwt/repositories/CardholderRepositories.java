@@ -54,4 +54,10 @@ public class CardholderRepositories implements Queries {
         cardholder.setPassword(rs.getString("password"));
         return Optional.of(cardholder);
     }
+
+    public boolean deleteByUsername (String username) {
+        int count = jdbcTemplate.update(SQL_DELETE_CARDHOLDER_INFO_BY_USERNAME, username);
+
+        return 1 == count;
+    }
 }
